@@ -70,9 +70,16 @@ html, body, .stApp, [class*="css"] {
     border-right: 1px solid __SIDEBAR_BORDER__;
 }
 [data-testid="stSidebar"] p, [data-testid="stSidebar"] span, [data-testid="stSidebar"] label,
+[data-testid="stSidebar"] li, [data-testid="stSidebar"] strong, [data-testid="stSidebar"] em,
+[data-testid="stSidebar"] div, [data-testid="stSidebar"] [data-testid="stMarkdownContainer"],
 [data-testid="stSidebar"] h1, [data-testid="stSidebar"] h2, [data-testid="stSidebar"] h3 {
     color: __TEXT__ !important;
 }
+/* 셀렉트박스(기억저장소) 선택값 텍스트 */
+[data-testid="stSidebar"] div[data-baseweb="select"] div { color: __TEXT__ !important; }
+/* 셀렉트박스 드롭다운 옵션 목록 (다크/라이트 공통) */
+div[data-baseweb="popover"] ul, ul[role="listbox"] { background: __INPUT_BG__ !important; }
+div[data-baseweb="popover"] li, li[role="option"] { color: __TEXT__ !important; }
 
 /* 히어로 카드 */
 .hero-card {
